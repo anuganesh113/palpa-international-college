@@ -1,0 +1,307 @@
+/**
+ * Created by Joshua Tamang
+*/
+
+@import "components/fonts_and_colors";
+
+/*------------------------------------ Site Wide Starts -----------------------------------*/
+
+/*------------------------------------- Site Wide Ends ------------------------------------*/
+
+/*--------------------------------- Header Wrapper Starts ---------------------------------*/
+/*--------------------------------- Header Wrapper Starts ---------------------------------*/
+
+/*-------------------------------- Content Wrapper Starts ---------------------------------*/
+/*--------------------------------- Content Wrapper Ends ----------------------------------*/
+
+/*--------------------------------- Footer Wrapper Starts ---------------------------------*/
+/*---------------------------------- Footer Wrapper Ends ----------------------------------*/
+
+/*----------------------------------- Components Starts -----------------------------------*/
+/*------------------------------------ Components Ends ------------------------------------*/
+
+/*---------------------------------- Slick Slider Starts ----------------------------------*/
+/*----------------------------------- Slick Slider Ends -----------------------------------*/
+
+/*------------------------------------- Mcustom Starts ------------------------------------*/
+/*-------------------------------------- Mcustom Ends -------------------------------------*/
+
+@media all and (max-width: 1600px) {
+  /*------------------------------------ Site Wide Starts -----------------------------------*/
+  .custom-container {
+  }
+  /*------------------------------------- Site Wide Ends ------------------------------------*/
+
+  /*--------------------------------- Header Wrapper Starts ---------------------------------*/
+  /*--------------------------------- Header Wrapper Starts ---------------------------------*/
+
+  /*-------------------------------- Content Wrapper Starts ---------------------------------*/
+
+  /*--------------------------------- Content Wrapper Ends ----------------------------------*/
+
+  /*--------------------------------- Footer Wrapper Starts ---------------------------------*/
+  /*---------------------------------- Footer Wrapper Ends ----------------------------------*/
+
+  /*----------------------------------- Components Starts -----------------------------------*/
+  /*------------------------------------ Components Ends ------------------------------------*/
+
+  /*---------------------------------- Slick Slider Starts ----------------------------------*/
+  /*----------------------------------- Slick Slider Ends -----------------------------------*/
+
+  /*------------------------------------- Mcustom Starts ------------------------------------*/
+  /*-------------------------------------- Mcustom Ends -------------------------------------*/
+}
+
+@media all and (max-width: 1399px) {
+  
+  html {
+    font-size: 60%;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .custom-container {
+    padding: 60px 80px;
+  }
+}
+
+// @media all and (max-width: 991px) {
+//   .header {
+//     .navigation {
+//       &__logo {
+//         img {
+//         }
+//       }
+//       &__menu {
+//         display: none;
+//       }
+//       &__list {
+//       }
+//       &__item {
+//       }
+//       &__link {
+//       }
+//       &__toggle {
+//         display: block;
+//       }
+//     }
+//   }
+//   .navigation-toggle-menu {
+//     font-family: $font-type-1;
+//     display: none;
+//     width: 100%;
+//     height: 100%;
+//     background: $primary-color;
+//     padding: 1rem 0;
+//     position: fixed;
+//     top: 10.2rem;
+//     right: 0;
+//     bottom: 0;
+//     z-index: 10;
+//     .navigation-toggle-list {
+//       .navigation-toggle-item {
+//         cursor: pointer;
+//         padding: 1.25rem 0;
+//         &:hover {
+//           background: #3f71ff;;
+//           .navigation-toggle-link {
+//             font-weight: 400;
+//           }
+//         }
+//         .navigation-toggle-link {
+//           padding: 0 2.5rem;
+//           font-size: 1.6rem;
+//           font-weight: 400;
+//           color: white;
+//           i {
+//             float: right;
+//             font-size: 2.5rem;
+//             margin-top: -0.5rem;
+//           }
+//         }
+//         .toggle-dropdown {
+//           display: none;
+//           padding: 1rem 0 0;
+//           &__item {
+//             padding: 1rem 6rem;
+//             &:hover {
+//               background: $white-color;
+//               .toggle-dropdown__link {
+//                 color: $primary-blue;
+//               }
+//             }
+//           }
+//           &__link {
+//             font-weight: 400;
+//             font-size: 1.6rem;
+//             color: $white-color;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media all and (max-width: 768px) {
+  .header {
+  .navigation {
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 8rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    &.scrolling-active {
+      background-color: $primary-color;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    }
+    &__logo {
+      width: 10rem;
+      padding: 0.3rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__menu {
+    }
+    &__list {
+      display: flex;
+    }
+    &__item {
+      position: relative;
+      padding: 4.1rem 0;
+      cursor: pointer;
+      &:not(:last-of-type) {
+        margin-right: 4rem;
+      }
+      &:hover {
+        .navigation__link {
+          &::after {
+            left: 0;
+            right: 0;
+            opacity: 1;
+          }
+        }
+
+        .dropdown {
+          display: block;
+        }
+      }
+      span {
+        color: white;
+      }
+    }
+    &__link {
+      color: $white-color;
+      font-size: 1.7rem;
+      letter-spacing: 0.2px;
+      position: relative;
+      font-weight: 500;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3rem;
+        height: 3px;
+        background: $secondary-color;
+        left: 50%;
+        right: 50%;
+        margin: auto;
+        transition: all ease-in-out 0.25s;
+        opacity: 0;
+      }
+      &.active {
+      }
+      i {
+        font-size: 2rem;
+        margin-top: -5px;
+        position: absolute;
+        top: 4px;
+      }
+    }
+    &__toggle {
+      display: none;
+      padding: 4.3rem 0;
+      cursor: pointer;
+      transition: all 0.6s ease;
+      &.open {
+        span {
+          color: $white-color;
+          &:first-child {
+            -webkit-transform: translateY(7px) rotate(45deg); /* Chrome, Safari, Opera */
+            transform: translateY(7px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            -webkit-transform: rotateY(90deg); /* Safari */
+            transform: rotateY(90deg);
+            /* rotates the second child on the Y AXIS ONLY 90 degrees so it disappears into a point */
+          }
+          &:last-child {
+            -webkit-transform: translateY(-9px) rotate(-45deg); /* Chrome, Safari, Opera */
+            transform: translateY(-9px) rotate(-45deg);
+          }
+        }
+      }
+      span {
+        width: 3rem;
+        height: 3px;
+        background: #565656;
+        display: block;
+        webkit-transition-timing-function: linear; /* Safari and Chrome */
+        transition-timing-function: linear;
+        transition-duration: 0.5s;
+        &:not(:last-of-type) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background: $white-color;
+      padding: 1rem 0;
+      min-width: 24rem;
+      &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background: $white-color;
+        position: absolute;
+        top: -6px;
+        left: 2rem;
+        transform: rotate(45deg);
+      }
+      &__item {
+        padding: 1rem 2rem;
+        &:hover {
+          background: $white-color;
+          .dropdown__link {
+            color: $primary-blue;
+          }
+        }
+      }
+      &__link {
+        color: #757171;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+      }
+    }
+  }
+}
+}
+
+@media (min-width: 576px) {
+  .program-modal-dialog {
+    max-width: 800px;
+  }
+}
+
