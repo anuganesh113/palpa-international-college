@@ -13,7 +13,7 @@
                 <img src="img/about/1.jpg" alt="Students">
             </div>
             <div class="text-container">
-                <h2>Welcome to Stem Academy International</h2>
+                <h2>Welcome to Stem Academy</h2>
                 <!-- <hr> -->
                 <p>Stem Academy is a government approved academic institution, which offers BBA (Bachelor of Business Administration) and MBA (Master of Business Administration) under the affiliation of Lincoln University College , Malaysia .It is approved from Ministry of Education Nepal (approval Number letter number 125/ 075/075- 186) and equivalent from Tribhuvan University (TU) , Nepal. Graduates from our college will be eligible to apply the government and private sector of Nepal. Degree gained from Stem Academy will be accrediated and valid in all over the world including Nepal.Our College will be mainly focused in the following stream of Education - S: Science, T: Technology, E: Enterprenuership and M: Management.</p>
             </div>

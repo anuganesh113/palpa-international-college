@@ -207,10 +207,6 @@ img {
   color: #fff;
 }
 
-.section-title {
-  margin-bottom: 7rem;
-}
-
 .section-title.white-text {
   color: #ffff;
 }
@@ -316,7 +312,7 @@ img {
     padding: 1.5rem 0 1rem;
     text-align: center;
     background-color: #3C5DC0;
-    transition: .4s;
+    transition: 0.4s;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 2rem 2rem;
     z-index: 1000000;
@@ -676,7 +672,7 @@ img {
 .search-modal .search-modal-dialog .search-modal-content .modal-body input {
   width: 87%;
   padding: 15px 20px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .search-modal .search-modal-dialog .search-modal-content .modal-body input:focus {
@@ -1017,7 +1013,7 @@ img {
   border-radius: 5px;
   font-size: 1.5rem;
   font-weight: 500;
-  transition: all .1s linear;
+  transition: all 0.1s linear;
 }
 
 #content-wrapper #about-page .why-choose-pic-section .section-btn a i {
@@ -1169,19 +1165,19 @@ img {
 }
 
 #content-wrapper #home-page .banner-section .slider .slide.active .caption h1 .slider-heading-upper span {
-  color: #3C5DC0;
+  color: #002eff;
   font-weight: 700;
 }
 
 #content-wrapper #home-page .banner-section .slider .slide.active .caption h1 .slider-heading-lower {
   display: block;
   margin-top: 3rem;
-  margin-bottom: 4.6rem;
+  margin-bottom: 7rem;
   color: white;
 }
 
 #content-wrapper #home-page .banner-section .slider .slide.active .caption h1 .slider-heading-lower span {
-  color: #3C5DC0;
+  color: #002eff;
   font-weight: 700;
 }
 
@@ -1195,6 +1191,23 @@ img {
   letter-spacing: 1px;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+#content-wrapper #home-page .banner-section .slider .slide.active .caption a:hover {
+  background: #0d38bb;
+}
+
+#content-wrapper #home-page .banner-section .slider .slide.active .caption .contact-btn {
+  background: transparent;
+  border: 2px solid white;
+  margin-left: 3rem;
+  padding: 1.8rem 2rem;
+}
+
+#content-wrapper #home-page .banner-section .slider .slide.active .caption .contact-btn:hover {
+  background: transparent;
+  color: #002eff;
+  border: 2px solid #002eff;
 }
 
 #content-wrapper #home-page .banner-section .controls .prev {
@@ -1226,7 +1239,6 @@ img {
 }
 
 #content-wrapper #home-page .programs-section {
-  background-color: #f3f3f3;
   padding-bottom: 6rem;
 }
 
@@ -1277,7 +1289,8 @@ img {
 }
 
 #content-wrapper #home-page .programs-section .custom-container .programs-btn {
-  float: right;
+  display: flex;
+  justify-content: center;
 }
 
 #content-wrapper #home-page .news-and-events-section {
@@ -1660,6 +1673,62 @@ img {
   }
 }
 
+.common-section-title {
+  text-align: center;
+}
+
+.common-section-title h4 {
+  text-transform: uppercase;
+  color: blue;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+  position: relative;
+  display: inline-block;
+}
+
+.common-section-title h4::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #3C5DC0;
+}
+
+.common-section-title h4::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #3C5DC0;
+}
+
+.common-section-title h2 {
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+  font-weight: 600;
+}
+
+.common-btn {
+  float: right;
+  margin-top: 1rem;
+  font-weight: 400;
+  padding-bottom: 5px;
+  transition: .4s;
+}
+
+.common-btn i {
+  margin-left: 5px;
+}
+
+.common-btn:hover {
+  border-bottom: 1px solid white;
+}
+
 .common-main-heading {
   color: white;
   margin-top: -32rem;
@@ -1706,63 +1775,72 @@ img {
   color: #3cb709;
 }
 
-.common-about-section .about-container .section-content {
-  display: flex;
+.common-about-section .custom-container {
+  padding: 6rem 0;
 }
 
-.common-about-section .about-container .section-content .img-container {
-  flex-basis: 50%;
-  height: 40rem;
-  padding: 2rem;
+.common-about-section .custom-container .about-container {
+  margin-top: 10rem;
+}
+
+.common-about-section .custom-container .about-container .section-content {
+  width: 70%;
+  margin-left: auto;
   position: relative;
 }
 
-.common-about-section .about-container .section-content .img-container::after {
-  content: "";
-  position: absolute;
-  bottom: 0.7rem;
-  left: 0.7rem;
-  z-index: -1;
-  width: 50%;
-  height: 30%;
-  background: linear-gradient(to right, #ff8501a6, #ffa90d4a);
-}
-
-.common-about-section .about-container .section-content .img-container::before {
-  content: "";
-  position: absolute;
-  top: 0.8rem;
-  right: 0.7rem;
-  z-index: -1;
-  width: 20%;
-  height: 30%;
-  background: linear-gradient(to left, #ff850199, #ffa90d54);
-}
-
-.common-about-section .about-container .section-content .img-container img {
-  width: 100%;
-  height: 100%;
+.common-about-section .custom-container .about-container .section-content img {
+  width: 56rem;
+  height: auto;
   object-fit: cover;
   object-position: bottom;
+  position: absolute;
+  left: -43%;
+  top: -12%;
+  z-index: 1;
 }
 
-.common-about-section .about-container .section-content .text-container {
-  flex-basis: 50%;
-  padding-left: 3rem;
+.common-about-section .custom-container .about-container .section-content .text-container {
+  padding: 8rem 6rem 10rem 22rem;
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
-.common-about-section .about-container .section-content .text-container h2 {
-  margin-bottom: 1rem;
+.common-about-section .custom-container .about-container .section-content .text-container .section-title h4 {
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  margin-left: 7rem;
+  position: relative;
+}
+
+.common-about-section .custom-container .about-container .section-content .text-container .section-title h4::before {
+  content: "";
+  position: absolute;
+  left: -12%;
+  top: 11px;
+  width: 50px;
+  height: 1px;
+  background: white;
+}
+
+.common-about-section .custom-container .about-container .section-content .text-container .section-title h2 {
+  text-transform: capitalize;
+  line-height: 1.5;
   font-weight: 600;
-  font-size: 2.7rem;
-  color: #0f0fa2;
+  font-size: 3.8rem;
 }
 
-.common-about-section .about-container .section-content .text-container p {
+.common-about-section .custom-container .about-container .section-content .text-container p {
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2;
   letter-spacing: 0.4px;
   text-align: justify;
+  margin-top: 2rem;
+}
+
+.common-about-section .custom-container .about-container .section-content .text-container.overlay::after {
+  background-color: #0830c3bf;
 }
 
 .common-contact-info-wrapper {
@@ -1843,7 +1921,7 @@ img {
 .overlay:after {
   content: "";
   position: absolute;
-  background-color: #565fa2c2;
+  background-color: #1243bda6;
   height: 100%;
   width: 100%;
   left: 0;

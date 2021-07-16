@@ -9,8 +9,8 @@
                       <span class="slider-heading-upper tracking-in-expand-fwd-top">Study at <span>Palpa International College</span></span>
                       <span class="slider-heading-lower tracking-in-contract">for a <span>better</span> Tomorrow</span>
                     </h1>
-                    <a href="#programs" class="slide-in-blurred-bottom">View Courses <i class="fas fa-arrow-right"></i></a>
-                    <a href="#programs" class="slide-in-blurred-bottom contact-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    <a href="#programs" class="slide-in-blurred-bottom">View Courses <i class="fas fa-angle-right"></i></a>
+                    <a href="#programs" class="slide-in-blurred-bottom contact-btn">Contact Us <i class="fas fa-angle-right"></i></a>
                   </div>
               <!-- </div> -->
           </div>
@@ -46,19 +46,19 @@
   <section class="common-about-section">
     <div class="custom-container">
       <div class="about-container">
-        <div class="section-title">
+        <!-- <div class="section-title">
           <h1 class="common-section-heading">Who We Are</h1>
-        </div>
+        </div> -->
         <div class="section-content">
-          <div class="img-container">
-            <img src="img/about/1.jpg" alt="Students">
-          </div>
-          <div class="text-container">
-            <h2>Welcome to Stem Academy</h2>
-            <!-- <hr> -->
-            <p>Stem Academy is a government approved academic institution, which offers BBA (Bachelor of Business Administration) and MBA (Master of Business Administration) under the affiliation of Lincoln University College , Malaysia .It is approved from Ministry of Education Nepal (approval Number letter number 125/ 075/075- 186) and equivalent from Tribhuvan University (TU) , Nepal. Graduates from our college will be eligible to apply the government and private sector of Nepal. Degree gained from Stem Academy will be accrediated and valid in all over the world including Nepal.Our College will be mainly focused in the following stream of Education - S: Science, T: Technology, E: Enterprenuership and M: Management.</p>
-          
-            <button type="button" class="common-section-btn">Learn more</button>
+          <img src="img/about/college.jpg" alt="Students">
+          <div class="text-container overlay" style="background-image: url(img/programs/1.jpg)">
+            <div class="section-title">
+              <h4>About Palpa International College, 2017</h4>
+              <h2>The Best Solutions for better tomorrow</h2>
+            </div>
+            <p>PICMT is the government approved academic institution which offers BBA (Bachelor in Business Administration) and MBA (Masters in Business Administration) under the affiliation of the Lincoln University College, Malaysia.</p>
+            <p>PICMT is approved from Ministry of Education Nepal (Approval Number letter number 125/ 075/075- 186) and equivalent from Tribhuvan University (TU), Nepal. Graduates of this college will be eligible to apply the government and private sector of Nepal. Degree gained from Stem Academy will be accredited and valid in all over the world including Nepal.PICMT will be mainly focused in the following stream of Education - S: Science, T: Technology, E: Entrepreneurship, M: Management.</p>
+            <a href="about.php" class="common-btn">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         
@@ -68,8 +68,9 @@
   </section>
   <section class="programs-section" id="programs">
     <div class="custom-container">
-      <div class="section-title">
-        <h1 class="common-section-heading">Programs</h1>
+      <div class="common-section-title">
+        <h4>Our Programs</h4>
+        <h2>Let's Have A Look At our courses </h2>
       </div>
       <div class="section-content">
         <a href="#" data-toggle="modal" data-target="#basicExampleModal">
@@ -91,15 +92,18 @@
         </a>
 
       </div>
-      <button class="common-section-btn programs-btn">
-        View Program Details<i class="fas fa-arrow-right"></i>
-      </button>
+      <div class="programs-btn">
+        <a class="common-section-btn">
+          View All Courses<i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
     </div>
   </section>
   <section class="news-and-events-section">
     <div class="custom-container">
-      <div class="section-title">
-        <h1 class="common-section-heading">News & Events</h1>
+      <div class="common-section-title">
+        <h4>News & Events</h4>
+        <h2>Read Our Latest News & Events</h2>
       </div>
       <div class="section-content">
         <div class="recent-news-section">
