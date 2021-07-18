@@ -1,5 +1,5 @@
 <?php include ('header.php') ?>
-<main  class="about-page">
+<main id="about-page">
     <section class="common-main-heading">
         <h1>About Us</h1>
         <p>What makes a great company? It's really easy. It's also the people that are working there.</p>

@@ -2,14 +2,31 @@
  * Created by Anu Ganesh
  */
 
+
 //scripts for changing bg-color of navbar when the window is scrolled starts
 let navbar = document.querySelector('.navigation');
 window.addEventListener('scroll', () => {
-  let windowPosition = window.scrollY > 200; 
+  let windowPosition = window.scrollY > 80; 
   navbar.classList.toggle('scrolling-active', windowPosition);
 });
 
 //scripts for changing bg-color of navbar when the window is scrolled ends
+
+// Light Gallery Script starts
+lightGallery(document.querySelector('.gallery-container'), {
+  cssEasing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+  speed: 1000,
+});
+// Light Gallery Script ends
+function hideNavbar() {
+  const galleryImg =document.querySelector('.gallery-item');
+  const navbar = document.querySelector('.navigation');
+  galleryImg.addEventListener('click', () => {
+    navbar.style.display = "none";
+  })
+}
+
+hideNavbar();
 
 // scripts for navigation toggle button starts
 let navToggleBtn = document.querySelector('.navigation__toggle');
@@ -118,12 +135,11 @@ let index=0;
       timer=setInterval(autoPlay,4000);
   }
 
- 
-//  function autoPlay(){
-//      nextSlide();
-//  }
+ function autoPlay(){
+     nextSlide();
+ }
 
-// let timer=setInterval(autoPlay,6000);
+let timer=setInterval(autoPlay,6000);
 
 //End of Homepage Slider Scripts
 

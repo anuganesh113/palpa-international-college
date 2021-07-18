@@ -23,6 +23,7 @@
     <!----------------------- Fonts Starts ---------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!------------------------ Fonts Ends ----------------------->
 
 
@@ -35,6 +36,7 @@
     <link href="css/bowercomponent/slick.css" rel="stylesheet">
     <link href="css/bowercomponent/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="css/bowercomponent/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.1/css/lightgallery.min.css" integrity="sha512-ShUKQmljhTR5WiAIb5afZNvW2htTJfyZ2d65SYzQ0lladX55FD2UZlgYaSvYmfobBvC4VRy+e/iorrf/5PcJNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--------------------- Components Ends --------------------->
@@ -83,7 +85,7 @@
                         </ul> -->
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Courses<i class="uil uil-angle-down dropdown-btn"></i></a>
+                        <a href="#" class="navigation__link">Courses<i class="fas fa-angle-down dropdown-btn"></i></a>
                         <ul class="dropdown">
                             <li class="dropdown__item">
                                 <a href="bba.php" class="dropdown__link">BBA</a>
@@ -160,7 +162,7 @@
                 <div class="program-items-container">
                     <div class="program-item">
                         <div class="img-container">
-                            <i class="uil uil-book-open"></i>
+                            <i class='bx bx-book-open'></i>
                         </div>
                         <div class="text-container">
                             <h4>Course Name</h4>
@@ -169,7 +171,7 @@
                     </div>
                     <div class="program-item">
                         <div class="img-container">
-                        <i class="uil uil-calendar-alt"></i>
+                            <i class='bx bx-calendar'></i>
                         </div>
                         <div class="text-container">
                             <h4>Course Duration</h4>
@@ -178,7 +180,7 @@
                     </div>
                     <div class="program-item">
                         <div class="img-container">
-                        <i class="uil uil-clock-eight"></i>
+                            <i class='bx bx-time'></i>
                         </div>
                         <div class="text-container">
                             <h4>Credit Hours</h4>
@@ -187,7 +189,7 @@
                     </div>
                     <div class="program-item">
                         <div class="img-container">
-                        <i class="uil uil-graduation-cap"></i>
+                            <i class='bx bxs-graduation' ></i>
                         </div>
                         <div class="text-container">
                             <h4>University</h4>
@@ -197,9 +199,9 @@
                 </div>
                 <div class="other-content">
                     <h4>Approved By:</h4>
-                    <p><i class="uil uil-minus"></i>Government of Nepal & Government of Malaysia</p>
+                    <p>Government of Nepal & Government of Malaysia</p>
                     <h4>Credit Transfer</h4>
-                    <p><i class="uil uil-minus"></i>UK, Canada, Europe, USA, Australia</p>
+                    <p>UK, Canada, Europe, USA, Australia</p>
                     <h4>Course Outcome</h4>
                     <ul>
                         <li>Apply broad discipline knowledge to a range of theoretical and practical business situations through research and practical application</li>
@@ -209,13 +211,13 @@
                         <li>Apply technologies appropriately for a variety of commercial purposes</li>
                     </ul>
                     <h4>Specialization </h4>
-                    <p><i class="uil uil-minus"></i>Accounting, Finance, Human Resource Management, Marketing, Enterpernuership </p>
+                    <p>Accounting, Finance, Human Resource Management, Marketing, Entrepreneurship </p>
                     <h4>Local Equivalent </h4>
-                    <p><i class="uil uil-minus"></i>From Tribhuvan University </p>
+                    <p>From Tribhuvan University </p>
                     <h4>Campus Location</h4>
-                    <p><i class="uil uil-minus"></i>Lalitpur , Nepal </p>
+                    <p>Lalitpur , Nepal </p>
                     <h4>Program Head </h4>
-                    <p><i class="uil uil-minus"></i>Pramesh Gyawali </p>
+                    <p>Pramesh Gyawali </p>
                    
                 </div>
             </div>
@@ -238,7 +240,7 @@
                 <div class="program-items-container">
                     <div class="program-item">
                         <div class="img-container">
-                            <i class="uil uil-book-open"></i>
+                            <i class='bx bx-book-open'></i>
                         </div>
                         <div class="text-container">
                             <h4>Course Name</h4>
@@ -247,7 +249,7 @@
                     </div>
                     <div class="program-item">
                         <div class="img-container">
-                        <i class="uil uil-calendar-alt"></i>
+                            <i class='bx bx-calendar'></i>
                         </div>
                         <div class="text-container">
                             <h4>Course Duration</h4>
@@ -256,7 +258,7 @@
                     </div>
                     <div class="program-item">
                         <div class="img-container">
-                        <i class="uil uil-clock-eight"></i>
+                            <i class='bx bx-time'></i>
                         </div>
                         <div class="text-container">
                             <h4>Credit Hours</h4>
@@ -265,7 +267,7 @@
                     </div>
                     <div class="program-item">
                         <div class="img-container">
-                        <i class="uil uil-graduation-cap"></i>
+                            <i class='bx bxs-graduation'></i>
                         </div>
                         <div class="text-container">
                             <h4>University</h4>
@@ -275,9 +277,9 @@
                 </div>
                 <div class="other-content">
                     <h4>Approved By:</h4>
-                    <p><i class="uil uil-minus"></i>Government of Nepal & Government of Malaysia</p>
+                    <p>Government of Nepal & Government of Malaysia</p>
                     <h4>Credit Transfer</h4>
-                    <p><i class="uil uil-minus"></i>UK, Canada, Europe, USA, Australia</p>
+                    <p>UK, Canada, Europe, USA, Australia</p>
                     <h4>Course Outcome</h4>
                     <ul>
                         <li>Demonstrate managerial and leadership qualities through communicating and working effectively.</li>
@@ -287,13 +289,13 @@
                         <li>Generate solutions to problems using scientific and critical thinking skills.</li>
                     </ul>
                     <h4>Specialization </h4>
-                    <p><i class="uil uil-minus"></i>Accounting, Finance, Human Resource Management, Marketing, Enterpernuership </p>
+                    <p>Accounting, Finance, Human Resource Management, Marketing, Entrepreneurship</p>
                     <h4>Local Equivalent </h4>
-                    <p><i class="uil uil-minus"></i>From Tribhuvan University </p>
+                    <p>From Tribhuvan University </p>
                     <h4>Campus Location</h4>
-                    <p><i class="uil uil-minus"></i>Lalitpur , Nepal </p>
+                    <p>Lalitpur , Nepal </p>
                     <h4>Program Head </h4>
-                    <p><i class="uil uil-minus"></i>Pramesh Gyawali </p>
+                    <p>Pramesh Gyawali </p>
                    
                 </div>
             </div>

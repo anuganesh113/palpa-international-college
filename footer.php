@@ -86,6 +86,7 @@
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.1/lightgallery.min.js" integrity="sha512-oNnqDvhsML/dIa8o8ultPzFeNOaHmQDjzzADtxsOXY8DeD8iaf6Kn/kBSXL/IGv9/GPMc9Kxy+9YPillo2yA1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="js/thescripts.js"></script>
 <!-- Swiper js -->
 
