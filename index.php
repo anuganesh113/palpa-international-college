@@ -94,7 +94,7 @@
         </a>
 
       </div>
-      <div class="programs-btn">
+      <div class="common-main-btn">
         <a href="bba.php" class="common-section-btn">
           View All Courses<i class="fas fa-angle-right"></i>
         </a>
@@ -204,7 +204,7 @@
         </div>
 
       </div>
-      <div class="gallery-btn">
+      <div class="common-main-btn">
         <a href="gallery.php" class="common-section-btn">
           View All Gallery<i class="fas fa-angle-right"></i>
         </a>
@@ -265,11 +265,11 @@
         <div class="student-testimonial">
           <div class="student-thought">
             <p>
-              To me, this year is the year when I figured out what I what to do and be when I graduate. Even though I’m still deciding.
+            PICMT has provided me with a surfeit of opportunities to develop myself as an individual, as well as professional.
             </p>
           </div>
           <div class="student-details">
-            <img src="img/testimonial/student.png" alt="">
+            <img src="img/testimonial/1.png" alt="">
             <p>Sanjiv Shrestha</p>
             <p>BBA, 1st Year</p>
           </div>
@@ -277,11 +277,11 @@
         <div class="student-testimonial">
           <div class="student-thought">
             <p>
-              To me, this year is the year when I figured out what I what to do and be when I graduate. Even though I’m still deciding.
+            PICMT has always been an effective mentor by helping me to explore my strengths and to believe in myself.
             </p>
           </div>
           <div class="student-details">
-            <img src="img/testimonial/student.png" alt="">
+            <img src="img/testimonial/2.png" alt="">
             <p>Bishal Rai</p>
             <p>MBA, 1st Year</p>
           </div>
@@ -289,11 +289,11 @@
         <div class="student-testimonial">
           <div class="student-thought">
             <p>
-              To me, this year is the year when I figured out what I what to do and be when I graduate. Even though I’m still deciding.
+            PICMT is a place where we become a better person as our faculty believes in us and  they never give up on encouraging us to excel in whatever we do.
             </p>
           </div> 
           <div class="student-details">
-            <img src="img/testimonial/student.png" alt="">
+            <img src="img/testimonial/3.jpg" alt="">
             <p>Saroj Khanal</p>
             <p>BBA, 2nd Year</p>
           </div>
@@ -303,7 +303,71 @@
   </section>
 </main>
 <script>
-  lightGallery(document.querySelector('.gallery-container'));
+  //Homepage Slider Scripts
+const slides=document.querySelector(".slider").children;
+const prev=document.querySelector(".prev");
+const next=document.querySelector(".next");
+const indicator=document.querySelector(".indicator");
+let index=0;
+
+  prev.addEventListener("click",function(){
+      prevSlide();
+      resetTimer();
+  })
+
+  next.addEventListener("click",function(){
+     nextSlide(); 
+     resetTimer();
+  })
+
+   function indicateSlide(element){
+        index=element.id;
+        changeSlide();
+        resetTimer();
+   }
+
+  function prevSlide(){
+     if(index==0){
+       index=slides.length-1;
+     }
+     else{
+       index--;
+     }
+     changeSlide();
+  }
+
+  function nextSlide(){
+     if(index==slides.length-1){
+       index=0;
+     }
+     else{
+       index++;
+     }
+     changeSlide();
+  }
+
+  function changeSlide(){
+           for(let i=0; i<slides.length; i++){
+              slides[i].classList.remove("active");
+           }
+      slides[index].classList.add("active");
+  }
+
+  function resetTimer(){
+      // when click to indicator or controls button 
+      // stop timer 
+      clearInterval(timer);
+      // then started again timer
+      timer=setInterval(autoPlay,4000);
+  }
+
+//  function autoPlay(){
+//      nextSlide();
+//  }
+
+// let timer=setInterval(autoPlay,6000);
+
+//End of Homepage Slider Scripts
 </script>
 
 <?php include ('footer.php') ?>

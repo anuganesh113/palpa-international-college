@@ -82,10 +82,13 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="js/lightbox.min.js"></script>
+<!-- <script type="text/javascript" src="js/lightbox.min.js"></script> -->
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.1/lightgallery.min.js" integrity="sha512-oNnqDvhsML/dIa8o8ultPzFeNOaHmQDjzzADtxsOXY8DeD8iaf6Kn/kBSXL/IGv9/GPMc9Kxy+9YPillo2yA1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="js/thescripts.js"></script>
 <!-- Swiper js -->

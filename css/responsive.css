@@ -69,9 +69,14 @@
   /*-------------------------------------- Mcustom Ends -------------------------------------*/
 }
 
+/* @media all and (max-width: 1399px) {
+} */
 @media all and (max-width: 1399px) {
-  html {
-    font-size: 60%;
+  #footer-wrapper .top-footer-container .courses {
+    flex-basis: 16%;
+  }
+  #footer-wrapper .top-footer-container .quick-links {
+    flex-basis: 17%;
   }
 }
 

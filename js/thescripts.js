@@ -12,23 +12,11 @@ window.addEventListener('scroll', () => {
 
 //scripts for changing bg-color of navbar when the window is scrolled ends
 
-// Light Gallery Script starts
-lightGallery(document.querySelector('.gallery-container'), {
-  cssEasing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
-  speed: 1000,
-});
-// Light Gallery Script ends
-function hideNavbar() {
-  const galleryImg =document.querySelector('.gallery-item');
-  const navbar = document.querySelector('.navigation');
-  galleryImg.addEventListener('click', () => {
-    navbar.style.display = "none";
-  })
-}
-
-hideNavbar();
-
-// scripts for navigation toggle button starts
+  // Light Gallery Script starts
+  lightGallery(document.querySelector('.gallery-container'));
+  lightGallery(document.querySelector('.items-container'));
+  // Light Gallery Script ends
+  // scripts for navigation toggle button starts
 let navToggleBtn = document.querySelector('.navigation__toggle');
 let navToggleList = document.querySelector('.navigation__list');
 
@@ -40,10 +28,10 @@ navToggleBtn.addEventListener('click', () => {
 // scripts for navigation toggle button ends
 
 // scripts for navigation toggle  dropdown menu starts
-let dropdownBtn= document.querySelector('.dropdown-btn');
+let dropdownLink= document.querySelector('.nav-dropdown-link');
 let dropdownList = document.querySelector('.dropdown');
 
-dropdownBtn.addEventListener('click', ()=> {
+dropdownLink.addEventListener('click', ()=> {
   dropdownList.classList.toggle('show');
 });
 // let navToggleItem = document.querySelector('.navigation-toggle-item');
@@ -76,72 +64,6 @@ dropdownBtn.addEventListener('click', ()=> {
       prevEl: ".swiper-button-prev",
     },
   });
-
-//Homepage Slider Scripts
-const slides=document.querySelector(".slider").children;
-const prev=document.querySelector(".prev");
-const next=document.querySelector(".next");
-const indicator=document.querySelector(".indicator");
-let index=0;
-
-  prev.addEventListener("click",function(){
-      prevSlide();
-      resetTimer();
-  })
-
-  next.addEventListener("click",function(){
-     nextSlide(); 
-     resetTimer();
-  })
-
-   function indicateSlide(element){
-        index=element.id;
-        changeSlide();
-        resetTimer();
-   }
-
-  function prevSlide(){
-     if(index==0){
-       index=slides.length-1;
-     }
-     else{
-       index--;
-     }
-     changeSlide();
-  }
-
-  function nextSlide(){
-     if(index==slides.length-1){
-       index=0;
-     }
-     else{
-       index++;
-     }
-     changeSlide();
-  }
-
-  function changeSlide(){
-           for(let i=0; i<slides.length; i++){
-              slides[i].classList.remove("active");
-           }
-      slides[index].classList.add("active");
-  }
-
-  function resetTimer(){
-      // when click to indicator or controls button 
-      // stop timer 
-      clearInterval(timer);
-      // then started again timer
-      timer=setInterval(autoPlay,4000);
-  }
-
- function autoPlay(){
-     nextSlide();
- }
-
-let timer=setInterval(autoPlay,6000);
-
-//End of Homepage Slider Scripts
 
 var winWidth = $(window).width();
 

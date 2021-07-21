@@ -1,6 +1,10 @@
 <?php include ('header.php') ?>
 <main id="contact-page">
     <section class="common-main-heading">
+        <section class="common-breadcrumb-section">
+            <a href="#">Home</a> > 
+            <span>Contact</span>
+        </section>
         <h1>Contact Us</h1>
         <p>If you have any queries ,please feel free to contact us in any of the available informations provided.</p>
     </section>

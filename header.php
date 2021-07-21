@@ -28,6 +28,7 @@
 
 
     <!-------------------- Components Starts -------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -85,7 +86,7 @@
                         </ul> -->
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Courses<i class="fas fa-angle-down dropdown-btn"></i></a>
+                        <a href="#" class="navigation__link nav-dropdown-link">Courses<i class="fas fa-angle-down dropdown-btn"></i></a>
                         <ul class="dropdown">
                             <li class="dropdown__item">
                                 <a href="bba.php" class="dropdown__link">BBA</a>
@@ -96,7 +97,7 @@
                         </ul>
                     </li>
                     <li class="navigation__item">
-                        <a href="news-events.php" class="navigation__link">News & Events</a>
+                        <a href="coming-soon.php" class="navigation__link">News & Events</a>
                     </li>
                     <li class="navigation__item">
                         <a href="gallery.php" class="navigation__link">Gallery</a>
