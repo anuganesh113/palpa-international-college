@@ -1,0 +1,151 @@
+/**
+ * Created by Anu Ganesh
+*/
+
+@import "components/fonts_and_colors";
+
+html{
+  scroll-behavior: smooth;
+                                              /* This defines what 1rem is */
+  font-size: 62.5%;                           /* 1rem = 10px; 10px/16px = 62.5% */
+
+  @include respond(tab-land) {               /*  (width < 1200) */
+    font-size: 56.25%;                       /* 1rem = 9px, 9/16 = 56.25%  */
+  }
+  @include respond(tab-port) {                /* (width < 900) */
+    font-size: 50%;                           /* 1rem = 8px, 8/16 =50% */
+  }
+  @include respond(big-desktop) {             /* (width > 1800) */
+    font-size: 75%;                           /* 1rem = 12px, 12/16 = 75% */
+  }
+}
+
+body{ 
+  height: 100%;
+  font-family: $font-type-3;
+  font-weight: 300;
+  color: black;
+  line-height: inherit;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  &:link,&:visited{
+    text-decoration: none;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3{
+  font-size: 2.5rem;
+}
+
+p{
+  margin-bottom: 1.8rem;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover, &:focus{
+    text-decoration: none
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+.slick-slider{
+  .slick-slide{
+    outline: none;
+  }
+}
+.container {
+  max-width: 98rem;
+  margin: auto;
+}
+
+
+.custom-container{
+  padding: 6rem 10rem;
+  max-width: 192rem;
+  margin: auto;
+  .small-width-container{
+    max-width: 120rem;
+  }
+  .small-medium-container{
+    max-width: 150rem;
+  }
+}
+
+.ar-btn{
+  display: inline-block;
+  width: auto!important;
+  outline: none;
+  padding: 0 3rem;
+  background-color: #212529;
+  border: 1px solid #212529;
+  text-align: center;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.section-title{
+  &.white-text{
+    color: #ffff;
+  }
+  &.move-left{
+    text-align: left;
+  }
+  h1{
+
+  }
+  h2{
+
+  }
+}
+.remove-top-padding{
+  padding-top: 0;
+}

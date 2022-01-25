@@ -1,0 +1,240 @@
+/**
+ * Created by Joshua Tamang
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&family=Jost:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Kaushan+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap&family=Montserrat:wght@200;300;400;500;600;700");
+/*-------------------------------------- Fonts Starts -------------------------------------*/
+/*--------------------------------------- Fonts Ends --------------------------------------*/
+/*------------------------------------- Colors Starts -------------------------------------*/
+/*-------------------------------------- Colors Ends --------------------------------------*/
+/*-------------------------------------- Mixins Starts ------------------------------------*/
+.ex-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ex-flex-wrap {
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+.ex-vertical {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ex-transition {
+  transition: all 0.6s ease;
+}
+
+.ex-transition-medium {
+  transition: all 1.2s ease;
+}
+
+.ex-transition-large {
+  transition: all 1.8s ease;
+}
+
+/*--------------------------------------- Mixins Ends -------------------------------------*/
+/*------------------------------------ Site Wide Starts -----------------------------------*/
+/*------------------------------------- Site Wide Ends ------------------------------------*/
+/*--------------------------------- Header Wrapper Starts ---------------------------------*/
+/*--------------------------------- Header Wrapper Starts ---------------------------------*/
+/*-------------------------------- Content Wrapper Starts ---------------------------------*/
+/*--------------------------------- Content Wrapper Ends ----------------------------------*/
+/*--------------------------------- Footer Wrapper Starts ---------------------------------*/
+/*---------------------------------- Footer Wrapper Ends ----------------------------------*/
+/*----------------------------------- Components Starts -----------------------------------*/
+/*------------------------------------ Components Ends ------------------------------------*/
+/*---------------------------------- Slick Slider Starts ----------------------------------*/
+/*----------------------------------- Slick Slider Ends -----------------------------------*/
+/*------------------------------------- Mcustom Starts ------------------------------------*/
+/*-------------------------------------- Mcustom Ends -------------------------------------*/
+@media all and (max-width: 1600px) {
+  /*------------------------------------ Site Wide Starts -----------------------------------*/
+  /*------------------------------------- Site Wide Ends ------------------------------------*/
+  /*--------------------------------- Header Wrapper Starts ---------------------------------*/
+  /*--------------------------------- Header Wrapper Starts ---------------------------------*/
+  /*-------------------------------- Content Wrapper Starts ---------------------------------*/
+  /*--------------------------------- Content Wrapper Ends ----------------------------------*/
+  /*--------------------------------- Footer Wrapper Starts ---------------------------------*/
+  /*---------------------------------- Footer Wrapper Ends ----------------------------------*/
+  /*----------------------------------- Components Starts -----------------------------------*/
+  /*------------------------------------ Components Ends ------------------------------------*/
+  /*---------------------------------- Slick Slider Starts ----------------------------------*/
+  /*----------------------------------- Slick Slider Ends -----------------------------------*/
+  /*------------------------------------- Mcustom Starts ------------------------------------*/
+  /*-------------------------------------- Mcustom Ends -------------------------------------*/
+}
+
+/* @media all and (max-width: 1399px) {
+} */
+@media all and (max-width: 1399px) {
+  #footer-wrapper .top-footer-container .courses {
+    flex-basis: 16%;
+  }
+  #footer-wrapper .top-footer-container .quick-links {
+    flex-basis: 17%;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .custom-container {
+    padding: 60px 80px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header .navigation {
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 8rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .navigation.scrolling-active {
+    background-color: #3c5dc0;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  }
+  .header .navigation__logo {
+    width: 10rem;
+    padding: 0.3rem;
+  }
+  .header .navigation__logo img {
+    width: 100%;
+    height: auto;
+  }
+  .header .navigation__list {
+    display: flex;
+  }
+  .header .navigation__item {
+    position: relative;
+    padding: 4.1rem 0;
+    cursor: pointer;
+  }
+  .header .navigation__item:not(:last-of-type) {
+    margin-right: 4rem;
+  }
+  .header .navigation__item:hover .navigation__link::after {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .header .navigation__item:hover .dropdown {
+    display: block;
+  }
+  .header .navigation__item span {
+    color: white;
+  }
+  .header .navigation__link {
+    color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: 0.2px;
+    position: relative;
+    font-weight: 500;
+    position: relative;
+  }
+  .header .navigation__link::after {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    height: 3px;
+    background: #0fff00;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    transition: all ease-in-out 0.25s;
+    opacity: 0;
+  }
+  .header .navigation__link i {
+    font-size: 2rem;
+    margin-top: -5px;
+    position: absolute;
+    top: 4px;
+  }
+  .header .navigation__toggle {
+    display: none;
+    padding: 4.3rem 0;
+    cursor: pointer;
+    transition: all 0.6s ease;
+  }
+  .header .navigation__toggle.open span {
+    color: #fff;
+  }
+  .header .navigation__toggle.open span:first-child {
+    /* Chrome, Safari, Opera */
+    transform: translateY(7px) rotate(45deg);
+  }
+  .header .navigation__toggle.open span:nth-child(2) {
+    /* Safari */
+    transform: rotateY(90deg);
+    /* rotates the second child on the Y AXIS ONLY 90 degrees so it disappears into a point */
+  }
+  .header .navigation__toggle.open span:last-child {
+    /* Chrome, Safari, Opera */
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .header .navigation__toggle span {
+    width: 3rem;
+    height: 3px;
+    background: #565656;
+    display: block;
+    webkit-transition-timing-function: linear;
+    /* Safari and Chrome */
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+  }
+  .header .navigation__toggle span:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+  .header .navigation .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    padding: 1rem 0;
+    min-width: 24rem;
+  }
+  .header .navigation .dropdown::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: -6px;
+    left: 2rem;
+    transform: rotate(45deg);
+  }
+  .header .navigation .dropdown__item {
+    padding: 1rem 2rem;
+  }
+  .header .navigation .dropdown__item:hover {
+    background: #fff;
+  }
+  .header .navigation .dropdown__item:hover .dropdown__link {
+    color: #12499c;
+  }
+  .header .navigation .dropdown__link {
+    color: #757171;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media (min-width: 576px) {
+  .program-modal-dialog {
+    max-width: 800px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

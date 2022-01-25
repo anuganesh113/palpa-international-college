@@ -1,0 +1,177 @@
+/**
+ * Created by Joshua Tamang
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&family=Jost:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Kaushan+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*-------------------------------------- Fonts Starts -------------------------------------*/
+/*--------------------------------------- Fonts Ends --------------------------------------*/
+/*------------------------------------- Colors Starts -------------------------------------*/
+/*-------------------------------------- Colors Ends --------------------------------------*/
+/*-------------------------------------- Mixins Starts ------------------------------------*/
+.ex-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ex-flex-wrap {
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+.ex-vertical {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ex-transition {
+  transition: all .6s ease;
+}
+
+.ex-transition-medium {
+  transition: all 1.2s ease;
+}
+
+.ex-transition-large {
+  transition: all 1.8s ease;
+}
+
+/*--------------------------------------- Mixins Ends -------------------------------------*/
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: black;
+  line-height: inherit;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 1.8rem;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.slick-slider .slick-slide {
+  outline: none;
+}
+
+.container {
+  max-width: 98rem;
+  margin: auto;
+}
+
+.custom-container {
+  padding: 6rem 10rem;
+  max-width: 192rem;
+  margin: auto;
+}
+
+.custom-container .small-width-container {
+  max-width: 120rem;
+}
+
+.custom-container .small-medium-container {
+  max-width: 150rem;
+}
+
+.ar-btn {
+  display: inline-block;
+  width: auto !important;
+  outline: none;
+  padding: 0 3rem;
+  background-color: #212529;
+  border: 1px solid #212529;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.section-title {
+  margin-bottom: 7rem;
+}
+
+.section-title.white-text {
+  color: #ffff;
+}
+
+.section-title.move-left {
+  text-align: left;
+}
+
+.remove-top-padding {
+  padding-top: 0;
+}
+/*# sourceMappingURL=global.css.map */
